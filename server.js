@@ -1,6 +1,6 @@
 const express = require("express");
-const bcryt = require('bcrypt-nodejs');
-const cors = require('cors');
+const bcrypt = require("bcrypt");
+const cors = require("cors");
 
 const app = express();
 
@@ -56,7 +56,6 @@ app.get("/profile/:id", (req, res) => {
   }
 });
 
-
 //POST REUQUESTS
 app.post("/signin", (req, res) => {
   if (
@@ -71,9 +70,10 @@ app.post("/signin", (req, res) => {
 
 app.post("/register", (req, res) => {
   const { email, name, password } = req.body;
-  bcryt.hash(password, null, null, function(err, hash){
-      console.log(hash);
-  })
+  //   bcrypt.hash(password, null, null, function(err, hash){
+  //       console.log(hash);
+  //   })
+  bcrypt.hash(password, 10).then(console.log);
   database.users.push({
     id: "125",
     name: name,
