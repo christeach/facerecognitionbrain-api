@@ -42,7 +42,7 @@ app.post("/signin", (req, res) => {
 
 //REGISTER NEW USER
 app.post("/register", (req, res) => {
-  register.handleRegister(req, res, db, bcrypt);‰
+  register.handleRegister(req, res, db, bcrypt);
 });
 
 //COUNT IMAGE UPLOADS
