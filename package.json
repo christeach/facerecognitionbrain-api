@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,8 +18,5 @@
     "express": "^4.17.1",
     "knex": "^0.19.5",
     "pg": "^7.12.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
   }
 }
