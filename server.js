@@ -57,16 +57,3 @@ app.post("/imageurl", (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log(`app is running on port ${process.env.PORT}`);
 });
-
-/*
-/ --> res = this is working
-/signin --> POST = success || fail
-/register --> POST = Return new user {}
-/profile/:userId --> GET = user {}‰
-/image --> PUT --> user {count++}
-*/
-
-/* 
-app.use(express.urlencoded({extended: false}));
-app.use(express.json());
-*/
