@@ -42,7 +42,7 @@ app.post("/signin", (req, res) => {
 
 //REGISTER NEW USER
 app.post("/register", (req, res) => {
-  register.handleRegister(req, res, db, bcrypt);
+  register.handleRegister(req, res, db, bcrypt);‰
 });
 
 //COUNT IMAGE UPLOADS
@@ -62,7 +62,7 @@ app.listen(process.env.PORT || 3000, () => {
 / --> res = this is working
 /signin --> POST = success || fail
 /register --> POST = Return new user {}
-/profile/:userId --> GET = user {}
+/profile/:userId --> GET = user {}‰
 /image --> PUT --> user {count++}
 */
 
