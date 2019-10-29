@@ -27,7 +27,7 @@ app.use(cors());
 
 //GET REUQUESTS
 app.get("/", (req, res) => {
-  res.send(database.users);
+  res.send('it is working');
 });
 
 //GET USER PROFILE DATA
